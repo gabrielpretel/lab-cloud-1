@@ -14,7 +14,9 @@ export default defineNuxtConfig({
   css: ['@/assets/css/fonts.css', '@/assets/css/globalStyles.css'],
   ssr: false,
   vite: {
-    base: './',
     plugins: [svgLoader()],
+  },
+  app: {
+    baseURL: '/lab-cloud-1/',
   },
 })
