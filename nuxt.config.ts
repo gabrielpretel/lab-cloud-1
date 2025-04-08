@@ -12,11 +12,14 @@ export default defineNuxtConfig({
     'vue-sonner/nuxt',
   ],
   css: ['@/assets/css/fonts.css', '@/assets/css/globalStyles.css'],
-  ssr: false,
+  ssr: true,
   vite: {
     plugins: [svgLoader()],
   },
   app: {
     baseURL: '/lab-cloud-1/',
   },
+  nitro: {
+    preset: 'static'
+  }
 })
